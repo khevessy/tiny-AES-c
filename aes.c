@@ -147,7 +147,7 @@ static void KeyExpansion(uint8_t* RoundKey, const uint8_t* Key, uint8_t Nk, uint
   }
 
   // All other round keys are found from the previous round keys.
-  for (i = Nk; i < Nb * (Nr + 1); ++i)
+  for (i = Nk; i < Nb * (Nr + 1U); ++i)
   {
     {
       k = (i - 1) * 4;
